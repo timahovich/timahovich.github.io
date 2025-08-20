@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ivan TIMAKHOVICH - CV</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f9f9;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+
+        .header {
+            text-align: left;
+            margin-bottom: 30px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 15px;
+        }
+
+        .name {
+            font-size: 28px;
+            font-weight: bold;
+            margin-bottom: 5px;
+            color: #333;
+        }
+
+        .title {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 10px;
+        }
+
+        .contact-info {
+            font-size: 14px;
+            color: #666;
+        }
+
+        .contact-info a {
+            color: #0066cc;
+            text-decoration: none;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .section {
+            margin-bottom: 30px;
+        }
+
+        .section-title {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+            border-bottom: 1px solid #ddd;
+            padding-bottom: 5px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .about-text {
+            font-size: 14px;
+            line-height: 1.6;
+            color: #555;
+            text-align: justify;
+        }
+
+        .experience-item {
+            margin-bottom: 25px;
+            border-left: 3px solid #0066cc;
+            padding-left: 15px;
+        }
+
+        .company-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 5px;
+        }
+
+        .company-name {
+            font-weight: bold;
+            font-size: 16px;
+            color: #333;
+        }
+
+        .role {
+            font-weight: bold;
+            color: #0066cc;
+        }
+
+        .duration {
+            font-size: 13px;
+            color: #666;
+            font-style: italic;
+        }
+
+        .company-description {
+            font-size: 13px;
+            color: #666;
+            font-style: italic;
+            margin-bottom: 8px;
+        }
+
+        .achievements {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .achievements li {
+            font-size: 14px;
+            margin-bottom: 5px;
+            position: relative;
+            padding-left: 15px;
+            color: #555;
+        }
+
+        .achievements li:before {
+            content: "●";
+            color: #0066cc;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        .education-item {
+            margin-bottom: 15px;
+        }
+
+        .education-header {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 3px;
+        }
+
+        .education-details {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 3px;
+        }
+
+        .education-note {
+            font-size: 13px;
+            color: #666;
+            font-style: italic;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .skill-category {
+            margin-bottom: 15px;
+        }
+
+        .skill-category-title {
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .skill-list {
+            font-size: 14px;
+            color: #555;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+            
+            .company-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .name {
+                font-size: 24px;
+            }
+        }
+
+        @media print {
+            body {
+                background-color: white;
+                padding: 0;
+            }
+            
+            .container {
+                box-shadow: none;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <h1 class="name">Ivan TIMAKHOVICH</h1>
+            <div class="title">QA Engineer with Project Management Skills, Experience: 4+ years</div>
+            <div class="contact-info">
+                <a href="mailto:timahovichivan@gmail.com">timahovichivan@gmail.com</a> | 
+                +34670293674 | 
+                <a href="#">Telegram</a> | 
+                <a href="#">WhatsApp</a>
+            </div>
+        </header>
+
+        <section class="section">
+            <h2 class="section-title">About</h2>
+            <p class="about-text">
+                Results-driven QA Engineer & Project Manager with 4+ years of experience in web app testing, and project delivery. 
+                Skilled in test documentation, API testing, SQL, and JIRA/Zephyr. Strong communicator with proven client consulting 
+                and team coordination abilities. Adept at blending QA precision with PM leadership to deliver high-quality solutions.
+            </p>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Experience</h2>
+            
+            <div class="experience-item">
+                <div class="company-header">
+                    <div>
+                        <span class="company-name">Sawyer Tools</span> | 
+                        <span class="role">QA Engineer</span>
+                    </div>
+                    <div class="duration">08/2024 — Present, 1 year</div>
+                </div>
+                <div class="company-description">CRM platform for supplementary-education institutions</div>
+                <ul class="achievements">
+                    <li>Cut critical production bugs by 41% through systematic regression and case prioritisation.</li>
+                    <li>Added test coverage for financial scenarios and integrations with cash registers/POS and messengers.</li>
+                    <li>Took part in requirements and bug reviews during refinement, reducing Dev-stage errors by 23%.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="company-header">
+                    <div>
+                        <span class="company-name">Autotelic Council</span> | 
+                        <span class="role">Project Manager</span>
+                    </div>
+                    <div class="duration">01/2024 – 07/2024, 7 months</div>
+                </div>
+                <div class="company-description">Investment holding</div>
+                <ul class="achievements">
+                    <li>Created 6 technology reports on topics from AI applications in various industries to large language models for time-series data.</li>
+                    <li>Evaluated 7 startups, influencing key investment decisions.</li>
+                    <li>Contributed to 3 strategy projects, ranging from a hydropower plant initiative to fashion industry case studies.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="company-header">
+                    <div>
+                        <span class="company-name">Stakewolle</span> | 
+                        <span class="role">Project Manager</span>
+                    </div>
+                    <div class="duration">03/2022 – 12/2023, 1 year 9 months</div>
+                </div>
+                <div class="company-description">Crypto startup</div>
+                <div style="margin-bottom: 8px; font-size: 14px; color: #555;">
+                    Led a team of 5 people: frontend and backend developers, designer, copywriter, blogger, as well as a group of 15 brand ambassadors.
+                </div>
+                <ul class="achievements">
+                    <li>Enhanced process clarity and facilitated strategic planning, resulting in a 20% increase in productivity through the implementation of Scrum methodology.</li>
+                    <li>Redeveloped the company's website, attracting 13% of current users in two months, by changing the design style, adding new functions, and creating a gamification platform.</li>
+                    <li>Secured over $1.2M in grants by leading the development of over 14 complex products and cultivating international partnerships.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="company-header">
+                    <div>
+                        <span class="company-name">ITMO University</span> | 
+                        <span class="role">Project Manager</span>
+                    </div>
+                    <div class="duration">02/2021 – 02/2022, 1 year</div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Education</h2>
+            
+            <div class="education-item">
+                <div class="education-header">ITMO University | Bachelor's degree, Economics of a High-Tech Business</div>
+                <div class="education-note">79th university in the world according to QS World University Rankings by Subject.</div>
+                <div class="education-note">Among the university's top 40 graduates of the year.</div>
+            </div>
+
+            <div class="education-item">
+                <div class="education-header">EDHEC Business School | Exchange Semester, International Business Administration</div>
+                <div class="education-note">7th Business School in Europe, according to the Financial Times.</div>
+            </div>
+        </section>
+
+        <section class="section">
+            <h2 class="section-title">Skills</h2>
+            
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <div class="skill-category-title">QA Engineering:</div>
+                    <div class="skill-list">Manual testing, Test Cases, Checklists, Bug Reports, TRR.</div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-category-title">Technical:</div>
+                    <div class="skill-list">REST/SOAP API testing, SQL, Client-Server Architecture.</div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-category-title">Management:</div>
+                    <div class="skill-list">Resource Planning, Agile/Scrum, Client Communication.</div>
+                </div>
+
+                <div class="skill-category">
+                    <div class="skill-category-title">Software:</div>
+                    <div class="skill-list">Salesforce, JIRA, Zephyr, Xray, Postman, SoapUI.</div>
+                </div>
+            </div>
+
+            <div class="skill-category" style="margin-top: 15px;">
+                <div class="skill-category-title">Languages:</div>
+                <div class="skill-list">English (Fluent, IELTS C1), Spanish (A2), Russian (Native)</div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
